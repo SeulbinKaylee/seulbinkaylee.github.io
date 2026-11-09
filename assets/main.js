@@ -9,7 +9,7 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  const targets = document.querySelectorAll('.section, .strip, .code-card');
+  const targets = document.querySelectorAll('.section, .strip');
   if (!('IntersectionObserver' in window)) return;
   targets.forEach(el => el.classList.add('reveal'));
   const io = new IntersectionObserver(entries => {

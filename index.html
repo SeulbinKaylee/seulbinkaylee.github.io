@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seulbin Gu — Backend Engineer</title>
-  <meta name="description" content="Java · Spring 기반 5년차 백엔드 엔지니어 구슬빈의 포트폴리오. 대용량 데이터, 레거시 현대화, 보안 대응.">
-  <meta property="og:title" content="Seulbin Gu — Backend Engineer">
-  <meta property="og:description" content="Java · Spring 5년차 백엔드 엔지니어. 오래 버티는 시스템을 만듭니다.">
+  <title>구슬빈 | Backend Developer</title>
+  <meta name="description" content="Java, Spring으로 서버 만드는 백엔드 개발자 구슬빈입니다.">
+  <meta property="og:title" content="구슬빈 | Backend Developer">
+  <meta property="og:description" content="Java, Spring으로 서버 만드는 백엔드 개발자 구슬빈입니다.">
   <meta property="og:image" content="https://seulbinkaylee.github.io/assets/profile.png">
   <meta property="og:url" content="https://seulbinkaylee.github.io/">
-  <meta name="theme-color" content="#0b0d10">
+  <meta name="theme-color" content="#0e0c12">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,177 +21,158 @@
   </script>
 </head>
 <body>
-  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
 
   <header class="nav">
-    <a class="brand" href="#top"><span class="prompt">~/</span>seulbin<span class="caret">_</span></a>
+    <a class="brand" href="#top">seulbin<span class="caret">.</span>dev</a>
     <nav>
       <a href="#about">about</a>
       <a href="#stack">stack</a>
-      <a href="#journey">journey</a>
-      <a href="#writing">writing</a>
-      <a href="#contact">contact</a>
+      <a href="#log">log</a>
+      <a href="#blog">blog</a>
       <button class="theme" id="themeBtn" aria-label="테마 전환">◐</button>
     </nav>
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
       <div class="hero-text">
-        <p class="eyebrow"><span class="dot"></span> Backend Engineer · Java 5th year</p>
-        <h1>오래 버티는 시스템을<br><em>조용하게</em> 만듭니다.</h1>
+        <p class="eyebrow"><span class="dot"></span> Backend Developer · Java</p>
+        <h1>안녕하세요,<br>백엔드 개발자<br><em>구슬빈</em>이에요 👋</h1>
         <p class="lead">
-          Java · Spring 생태계에서 5년간 서비스를 설계하고 운영해 온 백엔드 엔지니어 <strong>구슬빈</strong>입니다.
-          대용량 데이터 처리, 오래된 레거시의 현대화, 보안 이슈 대응처럼 <strong>티 나지 않지만 무너지면 티 나는</strong> 일들을 주로 합니다.
+          Java랑 Spring으로 5년째 서버 만들고 있어요.
+          느린 쿼리 잡는 거, 복잡한 코드 정리하는 거 좋아해요.
+          요즘은 공부한 거 블로그에 꾸준히 쓰는 중!
         </p>
         <div class="cta">
-          <a class="btn primary" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">기술 블로그 →</a>
+          <a class="btn primary" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">블로그 구경하기</a>
           <a class="btn" href="https://github.com/SeulbinKaylee" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
-      <div class="code-card" aria-label="Java 코드로 표현한 자기소개">
-        <div class="code-head">
-          <span class="lights"><i></i><i></i><i></i></span>
-          <span class="file">Engineer.java</span>
-        </div>
-<pre><code><span class="k">public record</span> <span class="t">Engineer</span>(
-    <span class="t">String</span> name,
-    <span class="t">int</span> yearsOfExperience,
-    <span class="t">List</span>&lt;<span class="t">String</span>&gt; focus
-) {
-    <span class="k">public static</span> <span class="t">Engineer</span> <span class="f">seulbin</span>() {
-        <span class="k">return new</span> <span class="t">Engineer</span>(
-            <span class="s">"Seulbin Kaylee Gu"</span>,
-            <span class="n">5</span>,
-            <span class="t">List</span>.<span class="f">of</span>(
-                <span class="s">"High-volume data"</span>,
-                <span class="s">"Legacy modernization"</span>,
-                <span class="s">"Security hardening"</span>
-            )
-        );
-    }
+      <div class="hero-side">
+        <img class="avatar" src="assets/profile.png" alt="구슬빈" width="200" height="200">
+        <div class="code-card">
+          <div class="code-head">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <span class="file">Seulbin.java</span>
+          </div>
+<pre><code><span class="k">class</span> <span class="t">Seulbin</span> <span class="k">extends</span> <span class="t">Developer</span> {
 
-    <span class="a">@Transactional</span>(readOnly = <span class="k">true</span>)
-    <span class="k">public</span> <span class="t">String</span> <span class="f">motto</span>() {
-        <span class="k">return</span> <span class="s">"Measure first. Then refactor."</span>;
+    <span class="t">String</span> main  = <span class="s">"Java, Spring Boot"</span>;
+    <span class="t">String</span> likes = <span class="s">"쿼리 튜닝, 리팩토링, 커피"</span>;
+    <span class="t">int</span>    year  = <span class="n">5</span>;
+
+    <span class="a">@Override</span>
+    <span class="t">String</span> <span class="f">status</span>() {
+        <span class="k">return</span> <span class="s">"오늘도 버그 잡는 중 🐛"</span>;
     }
 }</code></pre>
-      </div>
-    </section>
-
-    <!-- METRICS STRIP -->
-    <section class="strip">
-      <div><b>5+</b><span>years with Java</span></div>
-      <div><b>2021.03</b><span>first commit</span></div>
-      <div><b>Spring</b><span>main battlefield</span></div>
-      <div><b>RDBMS</b><span>Oracle · MySQL</span></div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2><span class="num">01</span> About</h2>
-      <div class="about">
-        <img class="avatar" src="assets/profile.png" alt="구슬빈 프로필" width="160" height="160">
-        <div>
-          <p>
-            처음엔 새 언어와 프레임워크를 익히는 것 자체가 도전이었지만, 지금은 <strong>“어떻게 하면 이 문제를 더 단순하게 풀 수 있을까”</strong>를 고민하는 게 일의 대부분입니다.
-            대규모 데이터를 다루는 서비스, 오랫동안 여러 사람의 손을 거친 서비스, 보안 취약점 대응까지 —
-            기술적인 해결만큼 <strong>팀이 같은 방향을 보게 만드는 것</strong>이 중요하다는 걸 배웠습니다.
-          </p>
-          <p>
-            새로운 기술을 들일 땐 근거를 데이터로 설명하고, 팀을 설득하고, 끝까지 운영합니다.
-            화려한 아키텍처보다 <strong>새벽에 알람이 울리지 않는 시스템</strong>을 더 좋아합니다.
-          </p>
         </div>
       </div>
+    </section>
 
-      <div class="principles">
+    <section class="strip">
+      <div><b>5년차</b><span>백엔드 개발</span></div>
+      <div><b>Java</b><span>제일 편한 언어</span></div>
+      <div><b>Spring</b><span>거의 매일 씀</span></div>
+      <div><b>2021</b><span>개발 시작</span></div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about">
+        <p>
+          개발은 2021년 봄에 시작했어요. 처음엔 에러 메시지 하나 읽는 것도 벅찼는데,
+          그 뒤로 데이터 많은 서비스, 오래된 서비스, 보안 이슈까지 이것저것 부딪혀 보면서 많이 배웠어요.
+        </p>
+        <p>
+          혼자 잘하는 개발자보다 <strong>같이 일하기 편한 개발자</strong>가 되고 싶어요.
+          새로운 기술 써보자고 할 땐 왜 필요한지 근거부터 챙겨가는 편이에요.
+        </p>
+      </div>
+
+      <div class="cards">
         <article>
-          <span class="tag">// principle 1</span>
-          <h3>Measure first</h3>
-          <p>느리다는 감 대신 실행 계획, 프로파일링, 지표로 병목을 찾습니다. 최적화는 그다음입니다.</p>
+          <span class="emoji">🔍</span>
+          <h3>쿼리 튜닝</h3>
+          <p>실행계획 열어놓고 느린 쿼리 잡을 때가 제일 재밌어요.</p>
         </article>
         <article>
-          <span class="tag">// principle 2</span>
-          <h3>Respect the legacy</h3>
-          <p>오래된 코드는 오래 살아남은 코드입니다. 테스트로 감싸고, 작게 쪼개고, 안전하게 바꿉니다.</p>
+          <span class="emoji">🧹</span>
+          <h3>리팩토링</h3>
+          <p>오래된 코드를 조금씩, 안 터지게 정리하는 걸 좋아해요.</p>
         </article>
         <article>
-          <span class="tag">// principle 3</span>
-          <h3>Secure by default</h3>
-          <p>인증·인가, 입력 검증, 민감정보 처리는 기능이 아니라 기본값입니다. 나중은 없습니다.</p>
+          <span class="emoji">🔐</span>
+          <h3>보안</h3>
+          <p>인증, 인가 제대로 하는 법 계속 공부하고 있어요.</p>
         </article>
       </div>
     </section>
 
-    <!-- STACK -->
     <section id="stack" class="section">
-      <h2><span class="num">02</span> Tech Stack</h2>
+      <h2>Stack</h2>
       <div class="stack">
         <div class="stack-group">
           <h4>Language</h4>
-          <ul><li class="hot">Java 8 → 17 / 21</li><li>SQL</li><li>JavaScript</li></ul>
+          <ul><li class="hot">Java</li><li>SQL</li><li>JavaScript</li></ul>
         </div>
         <div class="stack-group">
           <h4>Framework</h4>
-          <ul><li class="hot">Spring Boot</li><li>Spring MVC</li><li>Spring Security</li><li>JPA / Hibernate</li><li>MyBatis</li></ul>
+          <ul><li class="hot">Spring Boot</li><li>Spring Security</li><li>JPA</li><li>MyBatis</li></ul>
         </div>
         <div class="stack-group">
-          <h4>Data</h4>
+          <h4>DB</h4>
           <ul><li class="hot">Oracle</li><li>MySQL</li><li>Redis</li></ul>
         </div>
         <div class="stack-group">
-          <h4>Infra &amp; Tools</h4>
-          <ul><li>Linux</li><li>Docker</li><li>Git / GitHub Actions</li><li>Gradle / Maven</li><li>IntelliJ IDEA</li></ul>
+          <h4>Tools</h4>
+          <ul><li>IntelliJ</li><li>Git</li><li>Docker</li><li>Linux</li></ul>
         </div>
       </div>
     </section>
 
-    <!-- JOURNEY -->
-    <section id="journey" class="section">
-      <h2><span class="num">03</span> Journey</h2>
+    <section id="log" class="section">
+      <h2>Log</h2>
       <ol class="timeline">
         <li>
-          <time>2026 —</time>
-          <div><h3>Senior-track Backend</h3><p>설계 리뷰와 기술 의사결정에 참여하며, 팀 단위로 품질과 운영 안정성을 끌어올리는 일에 집중.</p></div>
+          <time>2026</time>
+          <div><h3>지금</h3><p>기능 만드는 것뿐 아니라 설계 단계부터 같이 고민하는 개발자가 되려고 노력 중이에요.</p></div>
         </li>
         <li>
-          <time>2024 – 2025</time>
-          <div><h3>대용량 데이터 &amp; 보안</h3><p>대량 데이터 조회·배치 성능 개선, 쿼리 튜닝, 보안 취약점 점검 및 대응. 장애 원인 분석과 재발 방지까지.</p></div>
+          <time>2024 – 25</time>
+          <div><h3>데이터 &amp; 보안</h3><p>대량 데이터 조회 성능 개선하고, 보안 취약점 대응도 해봤어요.</p></div>
         </li>
         <li>
-          <time>2022 – 2023</time>
-          <div><h3>레거시 서비스 운영 &amp; 개선</h3><p>장기간 운영 중인 서비스의 유지보수를 맡아 구조 개선과 리팩터링을 병행. 협업 프로세스 정비.</p></div>
+          <time>2022 – 23</time>
+          <div><h3>운영 서비스 담당</h3><p>오래 돌아가던 서비스를 맡아서 고치고 개선하면서 실무 감을 잡았어요.</p></div>
         </li>
         <li>
           <time>2021</time>
-          <div><h3>Hello, World</h3><p>Java · Spring · Oracle로 웹 서비스 개발 시작. 첫 프로덕션 배포의 떨림을 아직 기억합니다.</p></div>
+          <div><h3>개발 시작</h3><p>Java, Spring, Oracle로 첫 웹 서비스. 첫 배포 날 진짜 떨렸어요.</p></div>
         </li>
       </ol>
     </section>
 
-    <!-- WRITING -->
-    <section id="writing" class="section">
-      <h2><span class="num">04</span> Writing</h2>
-      <p class="muted">개발하며 배운 것, 그리고 일상에서 쓸모 있는 정보들을 티스토리에 기록합니다.</p>
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <p class="muted">공부한 거, 삽질한 거, 알아두면 쓸모 있는 생활 정보까지 올리고 있어요.</p>
       <a class="blog-card" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">
         <div>
           <span class="tag">seulbinkaylee.tistory.com</span>
-          <h3>구슬빈의 기록</h3>
-          <p>Dev · 트러블슈팅 · 회고 · 생활 정보</p>
+          <h3>구슬빈 블로그</h3>
+          <p>개발 · 트러블슈팅 · 생활 정보</p>
         </div>
         <span class="arrow">↗</span>
       </a>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <h2><span class="num">05</span> Contact</h2>
-      <p class="big">함께 단단한 걸 만들고 싶다면,<br>편하게 연락 주세요.</p>
+    <section class="section contact">
+      <p class="big">궁금한 거 있으면<br>편하게 연락 주세요 :)</p>
       <div class="cta">
-        <a class="btn primary" href="https://github.com/SeulbinKaylee" target="_blank" rel="noopener">github.com/SeulbinKaylee</a>
+        <a class="btn primary" href="https://github.com/SeulbinKaylee" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">Tistory</a>
       </div>
     </section>
@@ -199,7 +180,6 @@
 
   <footer class="footer">
     <span>© <span id="year">2026</span> Seulbin Kaylee Gu</span>
-    <span class="mono">built with plain HTML/CSS · no framework, no tracker</span>
   </footer>
 
   <script src="assets/main.js"></script>
