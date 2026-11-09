@@ -1,168 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>구슬빈의 멋진 소개 페이지 🩷</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
-
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seulbin Gu — Backend Engineer</title>
+  <meta name="description" content="Java · Spring 기반 5년차 백엔드 엔지니어 구슬빈의 포트폴리오. 대용량 데이터, 레거시 현대화, 보안 대응.">
+  <meta property="og:title" content="Seulbin Gu — Backend Engineer">
+  <meta property="og:description" content="Java · Spring 5년차 백엔드 엔지니어. 오래 버티는 시스템을 만듭니다.">
+  <meta property="og:image" content="https://seulbinkaylee.github.io/assets/profile.png">
+  <meta property="og:url" content="https://seulbinkaylee.github.io/">
+  <meta name="theme-color" content="#0b0d10">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
-                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.png" alt="Image">
-                <h1 class="font-weight-bold">구슬빈</h1>
-                <p class="mb-4">안녕하세요 🤩<br>3년차 백엔드 개발자입니다.<br>만나서 반갑습니다.</p>
-                 <div class="d-flex justify-content-center mb-5">
-<!--                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>-->
-                        <a class="btn btn-outline-primary mr-2" href="https://github.com/SeulbinKaylee"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-outline-primary mr-2" href="https://seulbinkaylee.tistory.com/"><i class="fab fa-blogger"></i></a>
-<!--                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>-->
-<!--                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>-->
-                    </div>
-                <a href="" class="btn btn-lg btn-block btn-primary mt-auto">Hire Me</a>
-            </div>
-            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
-                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
-            </div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top"><span class="prompt">~/</span>seulbin<span class="caret">_</span></a>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#stack">stack</a>
+      <a href="#journey">journey</a>
+      <a href="#writing">writing</a>
+      <a href="#contact">contact</a>
+      <button class="theme" id="themeBtn" aria-label="테마 전환">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> Backend Engineer · Java 5th year</p>
+        <h1>오래 버티는 시스템을<br><em>조용하게</em> 만듭니다.</h1>
+        <p class="lead">
+          Java · Spring 생태계에서 5년간 서비스를 설계하고 운영해 온 백엔드 엔지니어 <strong>구슬빈</strong>입니다.
+          대용량 데이터 처리, 오래된 레거시의 현대화, 보안 이슈 대응처럼 <strong>티 나지 않지만 무너지면 티 나는</strong> 일들을 주로 합니다.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">기술 블로그 →</a>
+          <a class="btn" href="https://github.com/SeulbinKaylee" target="_blank" rel="noopener">GitHub</a>
         </div>
-        <div class="content">
-            <!-- Navbar Start -->
-            <div class="container p-0">
-                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav m-auto">
-<!--                            <a href="index.html" class="nav-item nav-link">Home</a>-->
-                            <a href="about.html" class="nav-item nav-link active">About</a>
-<!--                            <div class="nav-item dropdown">-->
-<!--                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>-->
-<!--                                <div class="dropdown-menu">-->
-<!--                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>-->
-<!--                                    <a href="single.html" class="dropdown-item">Blog Detail</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- Navbar End -->
+      </div>
 
-            <!-- Page Header Start -->
-            <div class="container py-5 px-2 bg-primary">
-                <div class="row py-5 px-4">
-                    <div class="col-sm-6 text-center text-md-left">
-                        <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">About Me</h1>
-                    </div>
-                    <div class="col-sm-6 text-center text-md-right">
-                        <div class="d-inline-flex pt-2">
-                            <h4 class="m-0 text-white"><a class="text-white" href="">Home</a></h4>
-                            <h4 class="m-0 text-white px-2">/</h4>
-                            <h4 class="m-0 text-white">About Me</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Page Header End -->
-
-
-            <!-- About Start -->
-            <div class="container bg-white pt-5">
-                <div class="row px-3 pb-5">
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">나(구슬빈)에 관하여 ...</h2>
-                        <img class="img-fluid float-left w-50 mr-4 mb-3" src="img/about.jpg" alt="Image">
-                        <p class="m-0">
-                            안녕하세요 🙂
-                            <br><br>
-                            3년차 백엔드 개발자이자 구슬빈으로써 저는 창의성과 혁신을 추구하는 여정을 보내는 중입니자. 저는 종종 '발명가'라고 불리며, 새로운 아이디어와 무한한 가능성에 대한 열정을 가지고 있습니다. 이러한 성향은 백엔드 개발 분야에서 매우 중요한 자산이 될 것이라고 생각합니다.
-                            <br><br>
-                            초기 단계에는 새로운 프로그래밍 언어와 프레임워크를 익히는 것이 도전이었습니다. 하지만 저는 단순히 기술을 배우는 것을 넘어서, 어떻게 하면 더 효율적이고 혁신적인 방법으로 문제를 해결할 수 있을지를 고민했습니다. 이런 과정에서 실패와 시행착오는 불가피했지만, 제 성격의 특성상 새로운 접근 방식을 모색하고 다양한 시도를 하는 과정 자체가 즐거움이었습니다.
-                            <br><br>
-                            개발자로서 성장하면서, 저는 새롭고 도전적인 프로젝트를 맡게 되었습니다. 대규모 데이터를 다루는 서비스, 오랫동안 관리되고 있던 서비스, 보안 문제 해결 등 다양한 상황에서 기술적인 문제뿐만 아니라, 팀원들과의 협업, 프로젝트 관리 등 다방면에서의 도전이 있었습니다. 제 다재다능함과 유연성은 이러한 다양한 상황에서도 효과적인 해결책을 찾아내는 데 큰 도움이 되었습니다.
-                            <br><br>
-                            또한, 저는 아이디어를 다른 사람들에게 설득력 있게 전달하는 능력이 뛰어납니다. 새로운 기술 도입이나 프로젝트 방향에 대한 제안을 할 때, 저는 이러한 능력을 활용하여 팀원들을 설득하고 프로젝트의 방향을 이끌었습니다.
-                            <br><br>
-                            백엔드 개발자로서의 도전과 끈기, 그리고 창의적이고 혁신적인 사고방식은 지금까지 이루어낸 성과와 앞으로 달성할 목표에 큰 영향을 미칠 것입니다. 이러한 경험과 성장은 제 능력을 더욱 빛나게 할 것이며, 앞으로 끊임없이 새로운 가능성을 탐색하는 원동력이 될 것입니다.
-                        </p>
-                    </div>
-                    <div class="col-md-12 pt-4">
-                        <div class="d-flex flex-column skills">
-                            <div class="progress w-100 mb-4">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">창의성</div>
-                            </div>
-                            <div class="progress w-100 mb-4">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">끈기</div>
-                            </div>
-                            <div class="progress w-100">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">도전</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- About End -->
-
-
-            <!-- Footer Start -->
-            <div class="container py-4 bg-secondary text-center">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="#">Seulbin Kaylee Gu</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-            <!-- Footer End -->
+      <div class="code-card" aria-label="Java 코드로 표현한 자기소개">
+        <div class="code-head">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <span class="file">Engineer.java</span>
         </div>
-    </div>
+<pre><code><span class="k">public record</span> <span class="t">Engineer</span>(
+    <span class="t">String</span> name,
+    <span class="t">int</span> yearsOfExperience,
+    <span class="t">List</span>&lt;<span class="t">String</span>&gt; focus
+) {
+    <span class="k">public static</span> <span class="t">Engineer</span> <span class="f">seulbin</span>() {
+        <span class="k">return new</span> <span class="t">Engineer</span>(
+            <span class="s">"Seulbin Kaylee Gu"</span>,
+            <span class="n">5</span>,
+            <span class="t">List</span>.<span class="f">of</span>(
+                <span class="s">"High-volume data"</span>,
+                <span class="s">"Legacy modernization"</span>,
+                <span class="s">"Security hardening"</span>
+            )
+        );
+    }
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <span class="a">@Transactional</span>(readOnly = <span class="k">true</span>)
+    <span class="k">public</span> <span class="t">String</span> <span class="f">motto</span>() {
+        <span class="k">return</span> <span class="s">"Measure first. Then refactor."</span>;
+    }
+}</code></pre>
+      </div>
+    </section>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
+    <!-- METRICS STRIP -->
+    <section class="strip">
+      <div><b>5+</b><span>years with Java</span></div>
+      <div><b>2021.03</b><span>first commit</span></div>
+      <div><b>Spring</b><span>main battlefield</span></div>
+      <div><b>RDBMS</b><span>Oracle · MySQL</span></div>
+    </section>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2><span class="num">01</span> About</h2>
+      <div class="about">
+        <img class="avatar" src="assets/profile.png" alt="구슬빈 프로필" width="160" height="160">
+        <div>
+          <p>
+            처음엔 새 언어와 프레임워크를 익히는 것 자체가 도전이었지만, 지금은 <strong>“어떻게 하면 이 문제를 더 단순하게 풀 수 있을까”</strong>를 고민하는 게 일의 대부분입니다.
+            대규모 데이터를 다루는 서비스, 오랫동안 여러 사람의 손을 거친 서비스, 보안 취약점 대응까지 —
+            기술적인 해결만큼 <strong>팀이 같은 방향을 보게 만드는 것</strong>이 중요하다는 걸 배웠습니다.
+          </p>
+          <p>
+            새로운 기술을 들일 땐 근거를 데이터로 설명하고, 팀을 설득하고, 끝까지 운영합니다.
+            화려한 아키텍처보다 <strong>새벽에 알람이 울리지 않는 시스템</strong>을 더 좋아합니다.
+          </p>
+        </div>
+      </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+      <div class="principles">
+        <article>
+          <span class="tag">// principle 1</span>
+          <h3>Measure first</h3>
+          <p>느리다는 감 대신 실행 계획, 프로파일링, 지표로 병목을 찾습니다. 최적화는 그다음입니다.</p>
+        </article>
+        <article>
+          <span class="tag">// principle 2</span>
+          <h3>Respect the legacy</h3>
+          <p>오래된 코드는 오래 살아남은 코드입니다. 테스트로 감싸고, 작게 쪼개고, 안전하게 바꿉니다.</p>
+        </article>
+        <article>
+          <span class="tag">// principle 3</span>
+          <h3>Secure by default</h3>
+          <p>인증·인가, 입력 검증, 민감정보 처리는 기능이 아니라 기본값입니다. 나중은 없습니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <h2><span class="num">02</span> Tech Stack</h2>
+      <div class="stack">
+        <div class="stack-group">
+          <h4>Language</h4>
+          <ul><li class="hot">Java 8 → 17 / 21</li><li>SQL</li><li>JavaScript</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4>Framework</h4>
+          <ul><li class="hot">Spring Boot</li><li>Spring MVC</li><li>Spring Security</li><li>JPA / Hibernate</li><li>MyBatis</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4>Data</h4>
+          <ul><li class="hot">Oracle</li><li>MySQL</li><li>Redis</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4>Infra &amp; Tools</h4>
+          <ul><li>Linux</li><li>Docker</li><li>Git / GitHub Actions</li><li>Gradle / Maven</li><li>IntelliJ IDEA</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+      <h2><span class="num">03</span> Journey</h2>
+      <ol class="timeline">
+        <li>
+          <time>2026 —</time>
+          <div><h3>Senior-track Backend</h3><p>설계 리뷰와 기술 의사결정에 참여하며, 팀 단위로 품질과 운영 안정성을 끌어올리는 일에 집중.</p></div>
+        </li>
+        <li>
+          <time>2024 – 2025</time>
+          <div><h3>대용량 데이터 &amp; 보안</h3><p>대량 데이터 조회·배치 성능 개선, 쿼리 튜닝, 보안 취약점 점검 및 대응. 장애 원인 분석과 재발 방지까지.</p></div>
+        </li>
+        <li>
+          <time>2022 – 2023</time>
+          <div><h3>레거시 서비스 운영 &amp; 개선</h3><p>장기간 운영 중인 서비스의 유지보수를 맡아 구조 개선과 리팩터링을 병행. 협업 프로세스 정비.</p></div>
+        </li>
+        <li>
+          <time>2021</time>
+          <div><h3>Hello, World</h3><p>Java · Spring · Oracle로 웹 서비스 개발 시작. 첫 프로덕션 배포의 떨림을 아직 기억합니다.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- WRITING -->
+    <section id="writing" class="section">
+      <h2><span class="num">04</span> Writing</h2>
+      <p class="muted">개발하며 배운 것, 그리고 일상에서 쓸모 있는 정보들을 티스토리에 기록합니다.</p>
+      <a class="blog-card" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">
+        <div>
+          <span class="tag">seulbinkaylee.tistory.com</span>
+          <h3>구슬빈의 기록</h3>
+          <p>Dev · 트러블슈팅 · 회고 · 생활 정보</p>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2><span class="num">05</span> Contact</h2>
+      <p class="big">함께 단단한 걸 만들고 싶다면,<br>편하게 연락 주세요.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/SeulbinKaylee" target="_blank" rel="noopener">github.com/SeulbinKaylee</a>
+        <a class="btn" href="https://seulbinkaylee.tistory.com/" target="_blank" rel="noopener">Tistory</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Seulbin Kaylee Gu</span>
+    <span class="mono">built with plain HTML/CSS · no framework, no tracker</span>
+  </footer>
+
+  <script src="assets/main.js"></script>
 </body>
-
 </html>
